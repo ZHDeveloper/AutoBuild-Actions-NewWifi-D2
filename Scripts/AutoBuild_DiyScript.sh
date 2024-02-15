@@ -115,6 +115,8 @@ EOF
 			
 		case "${TARGET_PROFILE}" in
 		d-team_newifi-d2)
+			AddPackage passwall-depends xiaorouji openwrt-passwall-packages main
+			AddPackage passwall-luci xiaorouji openwrt-passwall main
 			Copy ${CustomFiles}/${TARGET_PROFILE}_system ${BASE_FILES}/etc/config system
 		;;
 		x86_64)
